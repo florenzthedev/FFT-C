@@ -13,10 +13,11 @@
  *
  * @param X Input dataset, will be overwritten by results.
  * @param N Size of input dataset, must be a power of two.
+ * @param aux Auxillary information, unused in this implementation.
  *
  * @return  0 on success, this implementation will never reasonably fail.
  */
-int fourier_transform(double complex* X, long N);
+int fourier_transform(double complex* X, long N, int aux);
 
 /**
  * @brief Reorders the input dataset into bit-reversal-permutation for use with

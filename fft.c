@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int fourier_transform(double complex* X, long N) {
+int fourier_transform(double complex* X, long N, int aux) {
   bit_reversal_permutation(X, N);
   fft(X, N);
   return 0;
